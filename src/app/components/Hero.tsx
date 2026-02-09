@@ -141,7 +141,7 @@ export const Hero = () => {
             >
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -mt-6 sm:-mt-10">
                 <img
-                  src="./air.png"
+                  src="../../air.png"
                   alt="Airplane"
                   className="w-12 h-12 sm:w-24 sm:h-24 object-contain rotate-90 drop-shadow-2xl"
                 />
