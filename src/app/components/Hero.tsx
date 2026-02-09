@@ -101,22 +101,22 @@ export const Hero = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="hidden lg:block relative"
+          className="relative mt-24 mb-20 lg:my-0"
         >
           {/* Expert Verified Badge */}
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1 }}
-            className="absolute -top-10 -left-10 bg-white dark:bg-white/10 backdrop-blur-xl border border-slate-200 dark:border-white/20 p-6 rounded-2xl shadow-2xl z-20"
+            className="absolute -top-20 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:-top-10 sm:-left-10 bg-white dark:bg-white/10 backdrop-blur-xl border border-slate-200 dark:border-white/20 p-4 sm:p-6 rounded-2xl shadow-2xl z-20 w-max max-w-[90vw] sm:max-w-none"
           >
             <div className="flex items-center gap-3 mb-2">
               <div className="bg-gradient-to-br from-amber-400 to-orange-500 dark:from-amber-500/20 dark:to-orange-500/20 p-2 rounded-lg">
                 <CheckCircle className="w-6 h-6 text-white dark:text-amber-400" />
               </div>
-              <span className="font-bold text-slate-900 dark:text-white">Expert Verified</span>
+              <span className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">Expert Verified</span>
             </div>
-            <p className="text-slate-600 dark:text-slate-300 text-sm">Updated 1 hour ago for 2026 regulations</p>
+            <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">Updated 1 hour ago for 2026 regulations</p>
           </motion.div>
 
           {/* Main Circle & Orbiting Airplane Group */}
@@ -126,7 +126,7 @@ export const Hero = () => {
               rotateZ: [0, 2, 0]
             }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative w-[400px] h-[400px] mx-auto z-10 transition-transform duration-700 hover:scale-110"
+            className="relative w-[260px] h-[260px] sm:w-[400px] sm:h-[400px] mx-auto z-10 transition-transform duration-700 hover:scale-110"
           >
             {/* Orbiting Airplane (Synced with Earth's float) */}
             <motion.div
@@ -134,16 +134,16 @@ export const Hero = () => {
               transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
               className="absolute top-1/2 left-1/2 
                                -translate-x-1/2 -translate-y-1/2 
-                               w-[400px] h-[400px] 
+                               w-[260px] h-[260px] sm:w-[400px] sm:h-[400px]
                                rounded-full border border-dashed 
                                border-indigo-400/20 dark:border-indigo-500/10 
                                z-20 pointer-events-none"
             >
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -mt-10">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -mt-6 sm:-mt-10">
                 <img
                   src="./air.png"
                   alt="Airplane"
-                  className="w-24 h-24 object-contain rotate-90 drop-shadow-2xl"
+                  className="w-12 h-12 sm:w-24 sm:h-24 object-contain rotate-90 drop-shadow-2xl"
                 />
               </div>
             </motion.div>
@@ -167,16 +167,16 @@ export const Hero = () => {
           <motion.div
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="absolute -bottom-10 -right-10 bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-2xl shadow-2xl"
+            className="absolute -bottom-20 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:-bottom-10 sm:-right-10 bg-gradient-to-r from-indigo-600 to-purple-600 p-4 sm:p-6 rounded-2xl shadow-2xl w-max"
           >
             <div className="flex items-center gap-3">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                  <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
               <div>
-                <div className="text-white font-bold text-xl">4.9/5</div>
+                <div className="text-white font-bold text-lg sm:text-xl">4.9/5</div>
                 <div className="text-white/80 text-xs text-nowrap">15k+ Reviews</div>
               </div>
             </div>
