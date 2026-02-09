@@ -9,13 +9,13 @@ export const ContactPage = () => {
         {
             icon: MapPin,
             title: "Global Headquarters",
-            details: ["123 Innovation Drive", "Silicon Valley, CA 94025"],
+            details: ["123 Innovation Drive", "Nikol, Ahmedabad, India"],
             color: "from-blue-600 to-cyan-600"
         },
         {
             icon: Phone,
             title: "Direct Pipeline",
-            details: ["+1 (800) GLOBAL-JY", "+1 (555) 987-6543"],
+            details: ["+91 12345 67890"],
             color: "from-indigo-600 to-purple-600"
         },
         {
@@ -154,7 +154,7 @@ export const ContactPage = () => {
                             </div>
                             <div>
                                 <h3 className="text-3xl font-heading font-black mb-4 tracking-tight">Headquarters</h3>
-                                <p className="text-white/80 font-bold mb-6">Experience our physical intelligence deck in Silicon Valley for complex dossiers.</p>
+                                <p className="text-white/80 font-bold mb-6">Experience our physical intelligence deck in Ahmedabad for complex dossiers.</p>
                                 <button className="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl">
                                     Get Directions
                                 </button>

@@ -14,9 +14,9 @@ export const Hero = () => {
   ];
 
   const contactQuickInfo = [
-    { icon: Phone, text: "+1 (555) VISA-PRO", href: "tel:+15558472776" },
+    { icon: Phone, text: "+91 12345 67890", href: "tel:+911234567890" },
     { icon: Mail, text: "hello@passportandvisa.com", href: "mailto:hello@passportandvisa.com" },
-    { icon: MapPin, text: "Silicon Valley, CA, USA", href: "#" }
+    { icon: MapPin, text: "Nikol, Ahmedabad, India", href: "#" }
   ];
 
   return (

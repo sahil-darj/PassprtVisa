@@ -250,7 +250,7 @@ export const AboutPage = () => {
                                 "Our mission is simple: to dissolve the technological and bureaucratic barriers that prevent people from exploring our world. We build the bridges that global citizens walk across."
                             </p>
                             <div className="flex flex-col gap-2">
-                                <span className="text-2xl font-black text-white">Sahil Darji</span>
+                                <span className="text-2xl font-black text-white">Passport Visa</span>
                                 <span className="text-sm font-black uppercase tracking-widest text-indigo-400">Founder & CEO</span>
                             </div>
                         </motion.div>

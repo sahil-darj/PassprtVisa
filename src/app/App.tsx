@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { Navbar } from "@/app/components/Navbar";
 import { TopBanner } from "@/app/components/TopBanner";
 import { ContactFooter } from "@/app/components/ContactFooter";
@@ -12,6 +12,7 @@ import { CountriesPage } from "@/app/pages/CountriesPage";
 import { AboutPage } from "@/app/pages/AboutPage";
 import { ContactPage } from "@/app/pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
+import { Preloader } from "@/app/components/Preloader";
 
 function AppContent() {
   const { scrollYProgress } = useScroll();
@@ -21,8 +22,21 @@ function AppContent() {
     restDelta: 0.001,
   });
 
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <ScrollToTop />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 dark:from-[#0a0e27] dark:via-indigo-950/50 dark:to-purple-950/50 text-slate-900 dark:text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-900 dark:selection:text-indigo-100 font-sans transition-colors duration-500">
         {/* Progress Bar */}

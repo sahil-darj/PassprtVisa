@@ -50,7 +50,7 @@ export const ContactForm = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/50 uppercase tracking-wider font-bold">Call Us</p>
-                    <p className="text-xl font-bold">+1 (555) VISA-PRO</p>
+                    <p className="text-xl font-bold">+91 12345 67890</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
@@ -59,7 +59,7 @@ export const ContactForm = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/50 uppercase tracking-wider font-bold">Our Office</p>
-                    <p className="text-xl font-bold">Silicon Valley, CA, USA</p>
+                    <p className="text-xl font-bold">Nikol, Ahmedabad, India</p>
                   </div>
                 </div>
               </div>

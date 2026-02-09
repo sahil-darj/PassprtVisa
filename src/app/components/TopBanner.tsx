@@ -35,9 +35,9 @@ export const TopBanner = () => {
 
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-center text-white relative z-10">
                 <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-[10px] sm:text-xs font-black uppercase tracking-widest text-center">
-                    <a href="tel:+15558472776" className="flex items-center gap-2 hover:text-indigo-200 transition-colors">
+                    <a href="tel:+911234567890" className="flex items-center gap-2 hover:text-indigo-200 transition-colors">
                         <Phone className="w-3.5 h-3.5" />
-                        <span>+1 (555) VISA-PRO</span>
+                        <span>+91 12345 67890</span>
                     </a>
                     <div className="hidden sm:block w-1 h-1 rounded-full bg-white/30" />
                     <a href="mailto:hello@passportandvisa.com" className="hidden sm:flex items-center gap-2 hover:text-indigo-200 transition-colors">
@@ -47,7 +47,7 @@ export const TopBanner = () => {
                     <div className="hidden sm:block w-1 h-1 rounded-full bg-white/30" />
                     <div className="hidden md:flex items-center gap-2 opacity-90">
                         <MapPin className="w-3.5 h-3.5" />
-                        <span>Silicon Valley, CA, USA</span>
+                        <span>Nikol, Ahmedabad, India</span>
                     </div>
                 </div>
             </div>
