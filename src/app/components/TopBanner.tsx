@@ -40,12 +40,12 @@ export const TopBanner = () => {
                         <span>+1 (555) VISA-PRO</span>
                     </a>
                     <div className="hidden sm:block w-1 h-1 rounded-full bg-white/30" />
-                    <a href="mailto:hello@passportandvisa.com" className="flex items-center gap-2 hover:text-indigo-200 transition-colors">
+                    <a href="mailto:hello@passportandvisa.com" className="hidden sm:flex items-center gap-2 hover:text-indigo-200 transition-colors">
                         <Mail className="w-3.5 h-3.5" />
                         <span>hello@passportandvisa.com</span>
                     </a>
                     <div className="hidden sm:block w-1 h-1 rounded-full bg-white/30" />
-                    <div className="flex items-center gap-2 opacity-90">
+                    <div className="hidden md:flex items-center gap-2 opacity-90">
                         <MapPin className="w-3.5 h-3.5" />
                         <span>Silicon Valley, CA, USA</span>
                     </div>

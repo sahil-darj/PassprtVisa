@@ -34,7 +34,7 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed left-0 right-0 z-50 transition-all duration-500 px-6",
+        "fixed left-0 right-0 z-[100] transition-all duration-500 px-6",
         isScrolled
           ? "top-0 bg-white/90 dark:bg-[#0a0e27]/90 backdrop-blur-xl shadow-2xl shadow-indigo-500/10 py-3"
           : "top-[44px] md:top-[40px] bg-white/60 dark:bg-[#0a0e27]/60 backdrop-blur-lg shadow-xl shadow-slate-200/50 dark:shadow-none border-b border-slate-200/50 dark:border-white/5 py-5"
@@ -52,7 +52,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -75,9 +75,9 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="lg:hidden flex items-center gap-3">
           <button
-            className="text-slate-900 dark:text-white"
+            className="text-slate-900 dark:text-white p-2 hover:bg-slate-100 dark:hover:bg-white/10 rounded-full transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -92,7 +92,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-[#131829] border-t border-slate-200 dark:border-indigo-500/10 mt-4 overflow-hidden rounded-2xl shadow-2xl"
+            className="lg:hidden bg-white dark:bg-[#131829] border-t border-slate-200 dark:border-indigo-500/10 mt-4 overflow-hidden rounded-2xl shadow-2xl"
           >
             <div className="flex flex-col gap-4 p-6">
               {navLinks.map((link) => (

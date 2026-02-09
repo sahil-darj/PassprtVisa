@@ -185,7 +185,7 @@ export const PassportPage = () => {
                     <h2 className="text-4xl lg:text-5xl font-heading font-black text-slate-900 dark:text-white mb-6">Execution Pathways</h2>
                     <p className="text-slate-500 dark:text-slate-400 text-lg max-w-2xl mx-auto font-medium">Select the specialized protocol that governs your travel requirements.</p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-10">
+                <div className="flex flex-wrap justify-center gap-8 md:gap-10">
                     {services.map((service, index) => (
                         <motion.div
                             key={service.title}
@@ -193,19 +193,19 @@ export const PassportPage = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
-                            className="group relative rounded-[3rem] p-1 overflow-hidden"
+                            className="group relative rounded-[3rem] p-1 overflow-hidden w-full md:w-[calc(50%-1.25rem)] lg:w-[30%]"
                         >
                             {/* Gradient Border */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-20 group-hover:opacity-100 transition-opacity duration-500`} />
 
-                            <div className="relative h-full bg-white dark:bg-[#131829] rounded-[2.9rem] p-10 overflow-hidden">
+                            <div className="relative h-full bg-white dark:bg-[#131829] rounded-[2.9rem] p-6 md:p-10 overflow-hidden">
                                 {/* Abstract Background Shapes */}
                                 <div className={`absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br ${service.color} opacity-5 blur-[80px] group-hover:opacity-10 transition-opacity duration-700`} />
                                 <div className={`absolute -bottom-20 -left-20 w-64 h-64 bg-gradient-to-tr ${service.color} opacity-5 blur-[80px] group-hover:opacity-10 transition-opacity duration-700`} />
 
                                 <div className="relative z-10 flex flex-col h-full">
                                     <div className="flex items-start justify-between mb-10">
-                                        <div className={`w-20 h-20 bg-gradient-to-br ${service.color} rounded-[2rem] flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                                        <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br ${service.color} rounded-[2rem] flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
                                             <service.icon className="w-10 h-10 text-white" />
                                         </div>
                                         <span className="px-4 py-2 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-100 dark:border-white/10 text-[10px] font-black uppercase tracking-widest text-slate-400">
@@ -213,7 +213,7 @@ export const PassportPage = () => {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-3xl font-heading font-black mb-4 text-slate-900 dark:text-white leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-purple-600 transition-all duration-300">
+                                    <h3 className="text-2xl md:text-3xl font-heading font-black mb-4 text-slate-900 dark:text-white leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-purple-600 transition-all duration-300">
                                         {service.title}
                                     </h3>
 
@@ -305,7 +305,7 @@ export const PassportPage = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e27] via-[#0a0e27]/60 to-transparent" />
 
-                            <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-20">
+                            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 lg:p-20">
                                 <div className="max-w-7xl mx-auto">
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
@@ -313,11 +313,11 @@ export const PassportPage = () => {
                                         transition={{ delay: 0.2 }}
                                         className="flex flex-col md:flex-row gap-8 items-end"
                                     >
-                                        <div className={`w-32 h-32 rounded-[2.5rem] bg-gradient-to-br ${selectedService.color} flex items-center justify-center shadow-2xl ring-4 ring-white/10`}>
+                                        <div className={`w-20 h-20 md:w-32 md:h-32 rounded-[2.5rem] bg-gradient-to-br ${selectedService.color} flex items-center justify-center shadow-2xl ring-4 ring-white/10`}>
                                             <selectedService.icon className="w-14 h-14 text-white" />
                                         </div>
                                         <div className="flex-1 space-y-4">
-                                            <h2 className="text-6xl lg:text-8xl font-heading font-black text-white leading-tight filter drop-shadow-lg">{selectedService.title}</h2>
+                                            <h2 className="text-3xl md:text-6xl lg:text-8xl font-heading font-black text-white leading-tight filter drop-shadow-lg">{selectedService.title}</h2>
                                             <div className="flex flex-wrap gap-4">
                                                 <span className="px-6 py-2.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold tracking-widest text-xs uppercase flex items-center gap-2">
                                                     <Clock className="w-4 h-4" />
