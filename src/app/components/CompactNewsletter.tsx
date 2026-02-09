@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 
 export const CompactNewsletter = () => {
     return (
-        <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+        <section className="py-16 bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
             <div className="max-w-4xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-white dark:bg-[#131829] p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-slate-200 dark:border-indigo-500/10">
                     <div className="text-center md:text-left">

@@ -32,7 +32,7 @@ const steps = [
 
 export const ProcessTimeline = () => {
   return (
-    <section id="process" className="py-24 relative overflow-hidden bg-white dark:bg-[#0a0e27] transition-colors duration-500">
+    <section id="process" className="py-24 relative overflow-hidden bg-white dark:bg-slate-900/40 transition-colors duration-500">
       {/* Background Image */}
       <div className="absolute inset-0 pointer-events-none">
         <ImageWithFallback
@@ -40,7 +40,7 @@ export const ProcessTimeline = () => {
           alt="Planning Roadmap Background"
           className="w-full h-full object-cover opacity-[0.05] dark:opacity-[0.1]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white dark:from-[#0a0e27] dark:via-transparent dark:to-[#0a0e27]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white dark:from-slate-950 dark:via-transparent dark:to-slate-950" />
       </div>
       {/* Background blobs */}
 
@@ -86,7 +86,7 @@ export const ProcessTimeline = () => {
                 className="flex flex-col items-center text-center group"
               >
                 <div className="relative mb-8">
-                  <div className={`w-32 h-32 rounded-[2.5rem] bg-white dark:bg-[#131829] border border-slate-200 dark:border-indigo-500/10 flex items-center justify-center shadow-xl group-hover:shadow-indigo-500/20 group-hover:border-indigo-500/40 group-hover:-translate-y-2 transition-all duration-500`}>
+                  <div className={`w-32 h-32 rounded-[2.5rem] bg-white dark:bg-slate-900/40 backdrop-blur-xl border border-slate-200 dark:border-indigo-500/20 flex items-center justify-center shadow-xl group-hover:shadow-indigo-500/20 group-hover:border-indigo-500/40 group-hover:-translate-y-2 transition-all duration-500`}>
                     <div className="text-indigo-600 dark:text-indigo-400 transform group-hover:scale-110 transition-transform">
                       {step.icon}
                     </div>
@@ -108,7 +108,7 @@ export const ProcessTimeline = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-[#131829] p-10 lg:p-12 rounded-[3.5rem] border border-slate-200 dark:border-indigo-500/10 shadow-2xl relative overflow-hidden"
+            className="bg-white dark:bg-slate-900/40 backdrop-blur-xl p-10 lg:p-12 rounded-[3.5rem] border border-slate-200 dark:border-indigo-500/20 shadow-2xl relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/5 blur-3xl rounded-full" />
             <div className="flex items-center gap-4 text-red-500 dark:text-red-400 mb-8">
@@ -139,7 +139,7 @@ export const ProcessTimeline = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="group relative bg-slate-900 p-10 lg:p-12 rounded-[3.5rem] overflow-hidden shadow-2xl transition-all hover:shadow-indigo-500/20"
+            className="group relative bg-slate-900 dark:bg-slate-950/80 backdrop-blur-xl p-10 lg:p-12 rounded-[3.5rem] overflow-hidden shadow-2xl transition-all hover:shadow-indigo-500/20"
           >
             {/* Animated background grid */}
             <div className="absolute inset-0 opacity-10">

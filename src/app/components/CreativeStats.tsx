@@ -37,7 +37,7 @@ const stats = [
 
 export const CreativeStats = () => {
     return (
-        <section className="relative py-20 overflow-hidden bg-white dark:bg-[#0a0e27]">
+        <section className="relative py-20 overflow-hidden bg-white dark:bg-slate-900/40 transition-colors duration-500">
             {/* Background Image */}
             <div className="absolute inset-0 pointer-events-none">
                 <ImageWithFallback
@@ -52,7 +52,7 @@ export const CreativeStats = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="bg-slate-50 dark:bg-[#131829] rounded-[4rem] p-12 lg:p-20 border border-slate-200 dark:border-indigo-500/10 shadow-2xl relative overflow-hidden">
+                <div className="bg-slate-50 dark:bg-slate-900/40 backdrop-blur-xl rounded-[4rem] p-12 lg:p-20 border border-slate-200 dark:border-indigo-500/10 shadow-2xl relative overflow-hidden">
                     {/* Decorative glow */}
                     <div className="absolute -top-20 -right-20 w-80 h-80 bg-indigo-500/10 dark:bg-indigo-500/20 blur-[100px] rounded-full" />
                     <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-purple-500/10 dark:bg-purple-500/20 blur-[100px] rounded-full" />

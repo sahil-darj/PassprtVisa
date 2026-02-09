@@ -32,7 +32,7 @@ const infoCards = [
 
 export const PassportSection = () => {
   return (
-    <section id="passport" className="py-24 relative overflow-hidden bg-slate-50 dark:bg-[#0a0e27] transition-colors duration-500">
+    <section id="passport" className="py-24 relative overflow-hidden bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
       {/* Background Image */}
       <div className="absolute inset-0 pointer-events-none">
         <ImageWithFallback
@@ -40,7 +40,7 @@ export const PassportSection = () => {
           alt="Passport Stamps Background"
           className="w-full h-full object-cover opacity-[0.05] dark:opacity-[0.1]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 dark:from-[#0a0e27] dark:via-transparent dark:to-[#0a0e27]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 dark:from-slate-950 dark:via-transparent dark:to-slate-950" />
       </div>
       {/* Creative Background Orbs */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-indigo-500/5 blur-[120px] rounded-full -translate-x-1/2 pointer-events-none" />
@@ -88,7 +88,7 @@ export const PassportSection = () => {
               >
                 {/* Front Side */}
                 <div
-                  className="absolute inset-0 w-full h-full backface-hidden rounded-[3.5rem] bg-white dark:bg-[#131829] p-10 border border-slate-100 dark:border-indigo-500/10 shadow-xl overflow-hidden"
+                  className="absolute inset-0 w-full h-full backface-hidden rounded-[3.5rem] bg-white dark:bg-slate-900/40 backdrop-blur-xl p-10 border border-slate-100 dark:border-indigo-500/10 shadow-xl overflow-hidden"
                   style={{ backfaceVisibility: "hidden" }}
                 >
                   <div className="relative z-10 flex flex-col h-full">
@@ -140,7 +140,7 @@ export const PassportSection = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-slate-950 dark:bg-[#131829]/50 backdrop-blur-3xl rounded-[4rem] p-12 lg:p-24 border border-white/10 relative overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)]"
+            className="bg-slate-950 dark:bg-slate-900/40 backdrop-blur-3xl rounded-[4rem] p-12 lg:p-24 border border-white/10 relative overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)]"
           >
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-500/10 blur-[150px] rounded-full -mr-1/2 -mt-1/2" />
 

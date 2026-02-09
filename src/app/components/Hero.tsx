@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Shield, CheckCircle, Globe, Star, Phone, Mail, MapPin } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Counter } from "./Counter";
-import airCopy from "./air copy.png";
+import airCopy from "./air_copy.png";
 
 export const Hero = () => {
   const stats = [
@@ -15,7 +15,7 @@ export const Hero = () => {
 
   const contactQuickInfo = [
     { icon: Phone, text: "+91 12345 67890", href: "tel:+911234567890" },
-    { icon: Mail, text: "hello@passportandvisa.com", href: "mailto:hello@passportandvisa.com" },
+    { icon: Mail, text: "hello@felix.com", href: "mailto:hello@felix.com" },
     { icon: MapPin, text: "Nikol, Ahmedabad, India", href: "#" }
   ];
 
@@ -28,7 +28,7 @@ export const Hero = () => {
           alt="Mountain Global View"
           className="w-full h-full object-cover opacity-[0.15] dark:opacity-[0.25]"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white/40 to-white/90 dark:from-[#0a0e27] dark:via-indigo-950/80 dark:to-purple-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/80 via-white/40 to-indigo-100/90 dark:from-slate-950 dark:via-indigo-950/40 dark:to-slate-900/60" />
 
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -68,7 +68,7 @@ export const Hero = () => {
             Navigate Your{" "}
             <div className="block mt-4 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400 italic py-4 pr-10 inline-block">
-                Passport & Visa
+                Felix
               </span>
             </div>
             with Ease

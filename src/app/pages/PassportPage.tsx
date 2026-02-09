@@ -129,7 +129,7 @@ export const PassportPage = () => {
     ];
 
     return (
-        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-[#0a0e27] transition-colors duration-500">
+        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-slate-950 transition-colors duration-500">
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-slate-50 dark:bg-[#0a0e27] py-24 lg:py-32">
                 <div className="absolute inset-0 pointer-events-none">
@@ -138,7 +138,7 @@ export const PassportPage = () => {
                         alt="Passport & Travel Document Background"
                         className="w-full h-full object-cover opacity-[0.3] dark:opacity-[0.35]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-[#0a0e27]/80 dark:to-[#0a0e27]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-slate-950/80 dark:to-slate-950" />
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-[120px] animate-pulse" />
                 </div>
 
@@ -158,7 +158,7 @@ export const PassportPage = () => {
                             <span>Trusted Multi-Nation Services</span>
                         </motion.div>
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-black mb-6 text-slate-900 dark:text-white leading-tight">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">Passport & Visa</span> Intelligence
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">Felix</span> Intelligence
                         </h1>
                         <p className="text-xl text-slate-500 dark:text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
                             The ultimate hub for global citizens. We simplify international documentation into a seamless, high-velocity experience.
@@ -198,7 +198,7 @@ export const PassportPage = () => {
                             {/* Gradient Border */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-20 group-hover:opacity-100 transition-opacity duration-500`} />
 
-                            <div className="relative h-full bg-white dark:bg-[#131829] rounded-[2.9rem] p-6 md:p-10 overflow-hidden">
+                            <div className="relative h-full bg-white dark:bg-slate-900/40 backdrop-blur-xl rounded-[2.9rem] p-6 md:p-10 overflow-hidden">
                                 {/* Abstract Background Shapes */}
                                 <div className={`absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br ${service.color} opacity-5 blur-[80px] group-hover:opacity-10 transition-opacity duration-700`} />
                                 <div className={`absolute -bottom-20 -left-20 w-64 h-64 bg-gradient-to-tr ${service.color} opacity-5 blur-[80px] group-hover:opacity-10 transition-opacity duration-700`} />
@@ -253,7 +253,7 @@ export const PassportPage = () => {
             </section>
 
             {/* Required Documents Section */}
-            <section className="bg-slate-50 dark:bg-[#0a0e27] py-24 relative overflow-hidden transition-colors duration-500">
+            <section className="bg-slate-50 dark:bg-slate-900/20 py-24 relative overflow-hidden transition-colors duration-500">
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <div className="text-center mb-20">
                         <h2 className="text-4xl lg:text-5xl font-heading font-black text-slate-900 dark:text-white mb-6">Documentation Protocol</h2>
@@ -266,7 +266,7 @@ export const PassportPage = () => {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
-                                className="bg-white dark:bg-[#131829] p-8 rounded-[2.5rem] border border-slate-200 dark:border-indigo-500/10 shadow-xl shadow-slate-200/30 dark:shadow-none group"
+                                className="bg-white dark:bg-slate-900/40 backdrop-blur-xl p-8 rounded-[2.5rem] border border-slate-200 dark:border-indigo-500/10 shadow-xl shadow-slate-200/30 dark:shadow-none group"
                             >
                                 <div className="w-14 h-14 bg-indigo-50 dark:bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                     <doc.icon className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />

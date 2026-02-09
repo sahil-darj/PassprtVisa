@@ -77,7 +77,7 @@ export const AboutPage = () => {
     ];
 
     return (
-        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-[#0a0e27] transition-colors duration-500">
+        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-slate-950 transition-colors duration-500">
             {/* Background Decorations */}
             <div className="fixed inset-0 pointer-events-none overflow-hidden">
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-500/5 dark:bg-blue-500/10 blur-[160px] rounded-full" />
@@ -92,7 +92,7 @@ export const AboutPage = () => {
                         alt="Corporate Global Network"
                         className="w-full h-full object-cover opacity-[0.3] dark:opacity-[0.35]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-[#0a0e27]/80 dark:to-[#0a0e27]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-slate-950/80 dark:to-slate-950" />
                 </div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <motion.div
@@ -109,7 +109,7 @@ export const AboutPage = () => {
                             <span>Organizational Dossier</span>
                         </motion.div>
                         <h1 className="text-6xl md:text-7xl lg:text-9xl font-heading font-black mb-10 text-slate-900 dark:text-white leading-[0.9] tracking-tighter">
-                            Passport & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Visa</span>
+                            Felix
                         </h1>
                         <p className="text-2xl text-slate-500 dark:text-slate-400 max-w-3xl mx-auto font-medium leading-relaxed italic">
                             "Architecting the infrastructure of global citizenship since 2009."
@@ -128,7 +128,7 @@ export const AboutPage = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white dark:bg-[#131829] rounded-[3rem] p-10 border border-slate-200 dark:border-indigo-500/10 shadow-2xl shadow-indigo-500/5 group hover:-translate-y-3 transition-all duration-500"
+                            className="bg-white dark:bg-slate-900/40 backdrop-blur-xl rounded-[3rem] p-10 border border-slate-200 dark:border-indigo-500/20 shadow-2xl shadow-indigo-500/5 group hover:-translate-y-3 transition-all duration-500"
                         >
                             <div className={`w-14 h-14 bg-gradient-to-br ${stat.color} rounded-2xl flex items-center justify-center mb-8 shadow-xl group-hover:scale-110 transition-transform`}>
                                 <stat.icon className="w-7 h-7 text-white" />
@@ -158,7 +158,7 @@ export const AboutPage = () => {
                         </h2>
                         <div className="space-y-8 text-lg font-bold text-slate-500 dark:text-slate-400 leading-relaxed">
                             <p>
-                                Founded in 2009, Passport & Visa emerged as a response to the increasing complexity of international migration. We realized that borders weren't just physical boundaries, but information barriers.
+                                Founded in 2009, Felix emerged as a response to the increasing complexity of international migration. We realized that borders weren't just physical boundaries, but information barriers.
                             </p>
                             <p>
                                 Our mission was to build a bridge of intelligence. What began as a specialized consultancy has evolved into a global logistics powerhouse, integrating advanced technology with human expertise.
@@ -208,7 +208,7 @@ export const AboutPage = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white dark:bg-[#131829] rounded-[3rem] p-10 border border-slate-200 dark:border-indigo-500/10 hover:border-indigo-500/40 transition-all group hover:-translate-y-3"
+                            className="bg-white dark:bg-slate-900/40 backdrop-blur-xl rounded-[3rem] p-10 border border-slate-200 dark:border-indigo-500/20 hover:border-indigo-500/40 transition-all group hover:-translate-y-3"
                         >
                             <div className={`w-16 h-16 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mb-8 shadow-xl group-hover:scale-110 transition-transform`}>
                                 <value.icon className="w-8 h-8 text-white" />
@@ -250,7 +250,7 @@ export const AboutPage = () => {
                                 "Our mission is simple: to dissolve the technological and bureaucratic barriers that prevent people from exploring our world. We build the bridges that global citizens walk across."
                             </p>
                             <div className="flex flex-col gap-2">
-                                <span className="text-2xl font-black text-white">Passport Visa</span>
+                                <span className="text-2xl font-black text-white">Felix</span>
                                 <span className="text-sm font-black uppercase tracking-widest text-indigo-400">Founder & CEO</span>
                             </div>
                         </motion.div>

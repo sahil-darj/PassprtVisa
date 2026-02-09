@@ -40,9 +40,9 @@ export const TopBanner = () => {
                         <span>+91 12345 67890</span>
                     </a>
                     <div className="hidden sm:block w-1 h-1 rounded-full bg-white/30" />
-                    <a href="mailto:hello@passportandvisa.com" className="hidden sm:flex items-center gap-2 hover:text-indigo-200 transition-colors">
+                    <a href="mailto:hello@felix.com" className="hidden sm:flex items-center gap-2 hover:text-indigo-200 transition-colors">
                         <Mail className="w-3.5 h-3.5" />
-                        <span>hello@passportandvisa.com</span>
+                        <span>hello@felix.com</span>
                     </a>
                     <div className="hidden sm:block w-1 h-1 rounded-full bg-white/30" />
                     <div className="hidden md:flex items-center gap-2 opacity-90">

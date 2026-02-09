@@ -109,7 +109,7 @@ export const CountriesPage = () => {
         : countries.filter(c => c.region === selectedRegion);
 
     return (
-        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-[#0a0e27] transition-colors duration-500">
+        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-slate-950 transition-colors duration-500">
             {/* Background Decorations */}
             <div className="fixed inset-0 pointer-events-none overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/5 dark:bg-indigo-500/10 blur-[120px] rounded-full" />
@@ -124,7 +124,7 @@ export const CountriesPage = () => {
                         alt="Global Map Background"
                         className="w-full h-full object-cover opacity-[0.3] dark:opacity-[0.35]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-[#0a0e27]/80 dark:to-[#0a0e27]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-slate-950/80 dark:to-slate-950" />
                 </div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <motion.div
@@ -160,7 +160,7 @@ export const CountriesPage = () => {
                             onClick={() => setSelectedRegion(region)}
                             className={`px-8 py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all duration-300 ${selectedRegion === region
                                 ? "bg-indigo-600 text-white shadow-2xl shadow-indigo-500/30 -translate-y-1"
-                                : "bg-white dark:bg-white/5 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-white/10 hover:border-indigo-500/30"
+                                : "bg-white dark:bg-slate-900/40 backdrop-blur-xl text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-white/10 hover:border-indigo-500/30"
                                 }`}
                         >
                             {region}
@@ -201,7 +201,7 @@ export const CountriesPage = () => {
                         animate={{ y: 0 }}
                         exit={{ y: "100%" }}
                         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 z-[200] bg-white dark:bg-[#0a0e27] overflow-y-auto scrollbar-hide"
+                        className="fixed inset-0 z-[200] bg-white dark:bg-slate-950 overflow-y-auto scrollbar-hide"
                     >
                         {/* Close Button */}
                         <button
@@ -218,7 +218,7 @@ export const CountriesPage = () => {
                                 alt={selectedCountry.name}
                                 className="w-full h-full object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e27] via-[#0a0e27]/40 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
 
                             <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-20">
                                 <div className="max-w-7xl mx-auto">
@@ -255,11 +255,11 @@ export const CountriesPage = () => {
                                     {/* Stats Grid */}
                                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
                                         <div className="grid md:grid-cols-2 gap-6">
-                                            <div className="p-8 rounded-[2.5rem] bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5">
+                                            <div className="p-8 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/40 backdrop-blur-xl border border-slate-200 dark:border-white/5">
                                                 <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Total Population</h3>
                                                 <div className="text-5xl font-heading font-black text-slate-900 dark:text-white">{selectedCountry.population}</div>
                                             </div>
-                                            <div className="p-8 rounded-[2.5rem] bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5">
+                                            <div className="p-8 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/40 backdrop-blur-xl border border-slate-200 dark:border-white/5">
                                                 <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Local Currency</h3>
                                                 <div className="text-5xl font-heading font-black text-slate-900 dark:text-white">{selectedCountry.currency}</div>
                                             </div>
@@ -274,7 +274,7 @@ export const CountriesPage = () => {
                                             initial={{ opacity: 0, x: 20 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ delay: 0.5 }}
-                                            className="p-10 rounded-[2.5rem] bg-[#0a0e27] border border-white/10 relative overflow-hidden text-white"
+                                            className="p-10 rounded-[2.5rem] bg-slate-950 border border-white/10 relative overflow-hidden text-white"
                                         >
                                             <div className={`absolute inset-0 bg-gradient-to-br ${selectedCountry.color} opacity-20`} />
                                             <h3 className="text-xs font-black text-white/60 uppercase tracking-widest mb-8 relative z-10">Active Protocols</h3>
@@ -289,7 +289,7 @@ export const CountriesPage = () => {
 
                                             <button
                                                 onClick={() => setShowAppointment(true)}
-                                                className="w-full py-5 bg-white text-[#0a0e27] rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center gap-3 shadow-lg relative z-10"
+                                                className="w-full py-5 bg-white text-slate-950 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center gap-3 shadow-lg relative z-10"
                                             >
                                                 Initiate Application
                                             </button>

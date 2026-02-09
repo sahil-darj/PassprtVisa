@@ -1,5 +1,5 @@
 
-  # Global Journey Website Design
+  # Felix Website Design
 
   This is a code bundle for Global Journey Website Design. The original project is available at https://www.figma.com/design/buK44em0MNGxgshFuQlDIo/Global-Journey-Website-Design.
 

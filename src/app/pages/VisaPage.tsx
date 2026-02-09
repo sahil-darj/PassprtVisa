@@ -214,7 +214,7 @@ export const VisaPage = () => {
     ];
 
     return (
-        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-[#0a0e27] transition-colors duration-500">
+        <div className="min-h-screen pt-24 pb-16 bg-white dark:bg-slate-950 transition-colors duration-500">
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-slate-50 dark:bg-[#0a0e27] py-24 lg:py-32">
                 <div className="absolute inset-0 pointer-events-none">
@@ -223,7 +223,7 @@ export const VisaPage = () => {
                         alt="Global Travel Background"
                         className="w-full h-full object-cover opacity-[0.35] dark:opacity-[0.4]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-[#0a0e27]/80 dark:to-[#0a0e27]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white dark:via-slate-950/80 dark:to-slate-950" />
                     <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-blue-500/10 dark:bg-blue-500/20 rounded-full blur-[140px] animate-pulse" />
                 </div>
 
@@ -244,7 +244,7 @@ export const VisaPage = () => {
                                 <span>Global Access Intelligence</span>
                             </motion.div>
                             <h1 className="text-5xl md:text-6xl font-heading font-black mb-6 text-slate-900 dark:text-white leading-tight">
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Passport & Visa</span> Logistics
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Felix</span> Logistics
                             </h1>
                             <p className="text-xl text-slate-500 dark:text-slate-400 mb-10 leading-relaxed font-medium">
                                 Architecting your global mobility with precision-engineered visa services for the modern nomad and professional.
@@ -309,7 +309,7 @@ export const VisaPage = () => {
                             {/* Gradient Border */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${visa.color} opacity-20 group-hover:opacity-100 transition-opacity duration-500`} />
 
-                            <div className="relative h-full bg-white dark:bg-[#131829] rounded-[2.9rem] p-10 overflow-hidden flex flex-col">
+                            <div className="relative h-full bg-white dark:bg-slate-900/40 backdrop-blur-xl rounded-[2.9rem] p-10 overflow-hidden flex flex-col">
                                 {/* Abstract Background Shapes */}
                                 <div className={`absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br ${visa.color} opacity-5 blur-[80px] group-hover:opacity-10 transition-opacity duration-700`} />
                                 <div className={`absolute -bottom-20 -left-20 w-64 h-64 bg-gradient-to-tr ${visa.color} opacity-5 blur-[80px] group-hover:opacity-10 transition-opacity duration-700`} />
@@ -365,7 +365,7 @@ export const VisaPage = () => {
             </section>
 
             {/* Requirements Section with Image */}
-            <section className="py-24 bg-slate-900 dark:bg-[#131829] relative overflow-hidden">
+            <section className="py-24 bg-slate-950 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
                         <motion.div
@@ -570,7 +570,7 @@ export const VisaPage = () => {
                                             initial={{ opacity: 0, x: 20 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ delay: 0.7 }}
-                                            className="p-10 rounded-[2.5rem] bg-slate-50 dark:bg-[#131829] border border-slate-200 dark:border-indigo-500/20"
+                                            className="p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/40 backdrop-blur-xl border border-slate-200 dark:border-indigo-500/20"
                                         >
                                             <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">Authorized Zones</h3>
                                             <div className="flex flex-wrap gap-2">

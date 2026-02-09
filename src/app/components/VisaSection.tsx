@@ -12,7 +12,7 @@ export const VisaSection = () => {
   ];
 
   return (
-    <section id="visa" className="py-24 relative overflow-hidden bg-white dark:bg-[#0a0e27]">
+    <section id="visa" className="py-24 relative overflow-hidden bg-white dark:bg-slate-900/40 transition-colors duration-500">
       {/* Background Image */}
       <div className="absolute inset-0 pointer-events-none">
         <ImageWithFallback
@@ -20,7 +20,7 @@ export const VisaSection = () => {
           alt="Travel Horizon Background"
           className="w-full h-full object-cover opacity-[0.08] dark:opacity-[0.12]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white dark:from-[#0a0e27] dark:via-transparent dark:to-[#0a0e27]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white dark:from-slate-900/40 dark:via-transparent dark:to-slate-900/40" />
       </div>
       {/* Creative Background Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-indigo-500/5 skew-x-12 -mr-20 pointer-events-none" />
@@ -60,7 +60,7 @@ export const VisaSection = () => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   whileHover={{ scale: 1.02, backgroundColor: 'rgba(99, 102, 241, 0.05)' }}
-                  className="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-[#131829] border border-slate-200 dark:border-indigo-500/10 shadow-sm transition-all"
+                  className="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/40 backdrop-blur-xl border border-slate-200 dark:border-indigo-500/20 shadow-sm transition-all"
                 >
                   <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 rounded-xl">
                     {visa.icon}
@@ -93,14 +93,14 @@ export const VisaSection = () => {
                 transition={{ duration: 0.6 }}
                 className="space-y-6"
               >
-                <div className="group relative bg-white dark:bg-[#131829] p-8 rounded-[2rem] shadow-2xl border border-slate-100 dark:border-indigo-500/10 overflow-hidden">
+                <div className="group relative bg-white dark:bg-slate-900/40 backdrop-blur-xl p-8 rounded-[2rem] shadow-2xl border border-slate-100 dark:border-indigo-500/20 overflow-hidden">
                   <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                   <h5 className="text-5xl font-black text-indigo-600 dark:text-indigo-400 mb-2">90+</h5>
                   <p className="font-bold text-slate-900 dark:text-white text-lg">Visa-Free</p>
                   <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 italic">Destinations for standard travelers.</p>
                 </div>
 
-                <div className="group bg-white dark:bg-[#131829] p-8 rounded-[2rem] shadow-xl border border-slate-100 dark:border-indigo-500/10">
+                <div className="group bg-white dark:bg-slate-900/40 backdrop-blur-xl p-8 rounded-[2rem] shadow-xl border border-slate-100 dark:border-indigo-500/20">
                   <div className="w-14 h-14 bg-amber-100 dark:bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
                     <Clock className="w-8 h-8 text-amber-500" />
                   </div>
@@ -123,7 +123,7 @@ export const VisaSection = () => {
                   <p className="text-sm text-white/80 leading-relaxed">Connections with embassies in over 150+ capitals worldwide.</p>
                 </div>
 
-                <div className="group bg-white dark:bg-[#131829] p-8 rounded-[2rem] shadow-xl border border-slate-100 dark:border-indigo-500/10">
+                <div className="group bg-white dark:bg-slate-900/40 backdrop-blur-xl p-8 rounded-[2rem] shadow-xl border border-slate-100 dark:border-indigo-500/20">
                   <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <ShieldCheck className="w-8 h-8 text-emerald-500" />
                   </div>

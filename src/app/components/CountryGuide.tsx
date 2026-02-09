@@ -57,7 +57,7 @@ const featuredDestinations = [
 
 export const CountryGuide = () => {
   return (
-    <section id="countries" className="py-32 bg-white dark:bg-[#0a0e27] transition-colors duration-500 relative overflow-hidden">
+    <section id="countries" className="py-32 bg-slate-50 dark:bg-slate-950 transition-colors duration-500 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-500/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-500/5 blur-[120px] rounded-full pointer-events-none" />

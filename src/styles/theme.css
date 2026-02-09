@@ -27,23 +27,23 @@
 }
 
 .dark {
-  /* Dark Mode Colors */
-  --background: #0a0e27;
-  --foreground: #f1f5f9;
-  --card: #131829;
-  --card-foreground: #f8fafc;
-  --popover: #1a1f3a;
+  /* Dark Mode Colors - Cool Slate & Indigo */
+  --background: #020617;
+  --foreground: #f8fafc;
+  --card: #0f172a;
+  --card-foreground: #f1f5f9;
+  --popover: #0f172a;
   --popover-foreground: #f1f5f9;
-  --primary: #6366f1;
+  --primary: #818cf8; /* Lighter indigo for better contrast */
   --primary-foreground: #ffffff;
-  --secondary: #8b5cf6;
+  --secondary: #c084fc; /* Lighter purple */
   --secondary-foreground: #ffffff;
   --muted: #1e293b;
   --muted-foreground: #94a3b8;
-  --accent: #f59e0b;
-  --accent-foreground: #0a0e27;
+  --accent: #22d3ee; /* Cyan neon accent */
+  --accent-foreground: #020617;
   --border: #1e293b;
-  --input: #131829;
+  --input: #0f172a;
 }
 
 @theme inline {

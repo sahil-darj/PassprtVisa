@@ -41,7 +41,7 @@ export const ContactForm = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/50 uppercase tracking-wider font-bold">Email Support</p>
-                    <p className="text-xl font-bold">hello@passportandvisa.com</p>
+                    <p className="text-xl font-bold">hello@felix.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
@@ -69,7 +69,7 @@ export const ContactForm = () => {
                   <div className="w-10 h-10 bg-indigo-500 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/40">
                     <Globe className="w-6 h-6 text-white" />
                   </div>
-                  <span className="font-heading font-black text-2xl tracking-tighter">Passport & Visa</span>
+                  <span className="font-heading font-black text-2xl tracking-tighter">Felix</span>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ export const Footer = () => {
                 <Globe className="w-8 h-8" />
               </div>
               <span className="text-3xl font-heading font-black text-slate-900 dark:text-white tracking-tighter">
-                Passport & Visa
+                Felix
               </span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 mb-10 leading-relaxed text-lg font-medium">
@@ -210,7 +210,7 @@ export const Footer = () => {
         <div className="pt-12 border-t border-slate-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-col gap-3 text-center md:text-left">
             <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">
-              © 2026 PASSPORT & VISA INTELLIGENCE. ALL RIGHTS RESERVED.
+              © 2026 FELIX INTELLIGENCE. ALL RIGHTS RESERVED.
             </p>
             <p className="text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-widest leading-relaxed max-w-xl">
               Information provided is for educational purposes. We are not a government entity.
