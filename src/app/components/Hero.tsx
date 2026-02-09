@@ -64,14 +64,8 @@ export const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-6xl lg:text-8xl font-heading font-black text-slate-900 dark:text-white mb-8 leading-[1.1] tracking-tight">
-            Navigate Your{" "}
-            <div className="block mt-4 mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400 italic py-4 pr-10 inline-block">
-                Felix
-              </span>
-            </div>
-            with Ease
+          <h1 className="text-5xl sm:text-6xl lg:text-8xl font-heading font-black text-slate-900 dark:text-white mb-8 leading-tight tracking-tight">
+            Navigate Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400 italic pr-4 pb-1">Felix</span> with Ease
           </h1>
 
           <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-xl leading-relaxed">
