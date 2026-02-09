@@ -15,10 +15,10 @@ export const ContactForm = () => {
 
   return (
     <div className="relative z-10">
-      <div className="bg-white dark:bg-[#131829] rounded-[3rem] overflow-hidden shadow-2xl border border-slate-200 dark:border-indigo-500/10 transition-colors duration-500">
+      <div className="bg-white dark:bg-[#131829] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-slate-200 dark:border-indigo-500/10 transition-colors duration-500">
         <div className="flex flex-col lg:flex-row">
           {/* Contact Info */}
-          <div className="lg:w-2/5 bg-slate-900 dark:bg-indigo-900/40 p-12 lg:p-16 text-white relative overflow-hidden">
+          <div className="lg:w-2/5 bg-slate-900 dark:bg-indigo-900/40 p-8 md:p-12 lg:p-16 text-white relative overflow-hidden">
             <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-indigo-500/20 blur-[100px] rounded-full" />
             <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-500/20 blur-[80px] rounded-full" />
 
@@ -76,7 +76,7 @@ export const ContactForm = () => {
           </div>
 
           {/* Form */}
-          <div className="lg:w-3/5 p-12 lg:p-16 bg-white dark:bg-[#131829] transition-colors duration-500">
+          <div className="lg:w-3/5 p-6 md:p-12 lg:p-16 bg-white dark:bg-[#131829] transition-colors duration-500">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="space-y-3">

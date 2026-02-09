@@ -108,7 +108,7 @@ export const AboutPage = () => {
                             <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
                             <span>Organizational Dossier</span>
                         </motion.div>
-                        <h1 className="text-6xl md:text-7xl lg:text-9xl font-heading font-black mb-10 text-slate-900 dark:text-white leading-[0.9] tracking-tighter">
+                        <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black mb-10 text-slate-900 dark:text-white leading-[0.9] tracking-tighter">
                             Felix
                         </h1>
                         <p className="text-2xl text-slate-500 dark:text-slate-400 max-w-3xl mx-auto font-medium leading-relaxed italic">
@@ -120,7 +120,7 @@ export const AboutPage = () => {
 
             {/* Stats Section */}
             <section className="max-w-7xl mx-auto px-6 py-24 relative z-10">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {stats.map((stat, index) => (
                         <motion.div
                             key={stat.label}
@@ -226,7 +226,7 @@ export const AboutPage = () => {
 
             {/* Leadership Section */}
             <section className="max-w-7xl mx-auto px-6 py-24 mb-24 relative z-10">
-                <div className="bg-slate-900 dark:bg-indigo-950/40 rounded-[4rem] p-12 lg:p-24 overflow-hidden relative">
+                <div className="bg-slate-900 dark:bg-indigo-950/40 rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-12 lg:p-24 overflow-hidden relative">
                     {/* Abstract background */}
                     <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
                         <Globe className="w-full h-full scale-150 text-white" />

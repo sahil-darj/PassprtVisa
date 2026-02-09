@@ -65,7 +65,7 @@ export const ContactPage = () => {
                             <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
                             <span>Contact Synchronization</span>
                         </motion.div>
-                        <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-black mb-8 text-slate-900 dark:text-white leading-tight">
+                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-black mb-8 text-slate-900 dark:text-white leading-tight">
                             Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Sync</span>
                         </h1>
                         <p className="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
@@ -82,8 +82,8 @@ export const ContactPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
                 >
-                    <div className="relative p-1 rounded-[4rem] bg-gradient-to-br from-indigo-500/20 via-purple-500/20 to-pink-500/20 shadow-2xl">
-                        <div className="bg-white dark:bg-[#0a0e27] rounded-[3.75rem] p-2 overflow-hidden">
+                    <div className="relative p-1 rounded-[2.5rem] md:rounded-[4rem] bg-gradient-to-br from-indigo-500/20 via-purple-500/20 to-pink-500/20 shadow-2xl">
+                        <div className="bg-white dark:bg-[#0a0e27] rounded-[2.25rem] md:rounded-[3.75rem] p-2 overflow-hidden">
                             <ContactForm />
                         </div>
                     </div>
@@ -99,7 +99,7 @@ export const ContactPage = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.3 + index * 0.1 }}
-                            className="group bg-white dark:bg-[#131829] rounded-[3.5rem] p-10 border border-slate-200 dark:border-indigo-500/10 hover:border-indigo-500/40 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-indigo-500/10"
+                            className="group bg-white dark:bg-[#131829] rounded-[2rem] md:rounded-[3.5rem] p-8 md:p-10 border border-slate-200 dark:border-indigo-500/10 hover:border-indigo-500/40 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-indigo-500/10"
                         >
                             <div className={`w-14 h-14 bg-gradient-to-br ${info.color} rounded-2xl flex items-center justify-center mb-8 shadow-xl group-hover:scale-110 transition-transform`}>
                                 <info.icon className="w-7 h-7 text-white" />
@@ -124,15 +124,15 @@ export const ContactPage = () => {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-slate-900 rounded-[3.5rem] p-12 text-white relative overflow-hidden group"
+                        className="bg-slate-900 rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-12 text-white relative overflow-hidden group"
                     >
                         <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                        <div className="relative z-10 flex flex-col md:flex-row gap-10 items-center">
-                            <div className="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center backdrop-blur-xl">
+                        <div className="relative z-10 flex flex-col md:flex-row gap-8 md:gap-10 items-center">
+                            <div className="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center backdrop-blur-xl shrink-0">
                                 <Globe className="w-10 h-10 text-indigo-400" />
                             </div>
                             <div>
-                                <h3 className="text-3xl font-heading font-black mb-4 tracking-tight">Global Network</h3>
+                                <h3 className="text-2xl md:text-3xl font-heading font-black mb-4 tracking-tight">Global Network</h3>
                                 <p className="text-white/70 font-bold mb-6">Our strategic intelligence nodes span 195+ countries, providing 24/7 protocol verification.</p>
                                 <button className="bg-indigo-600 px-8 py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-indigo-500 transition-colors shadow-xl shadow-indigo-500/20">
                                     Explore Map
@@ -145,7 +145,7 @@ export const ContactPage = () => {
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-indigo-600 rounded-[3.5rem] p-12 text-white relative overflow-hidden group shadow-2xl shadow-indigo-500/30"
+                        className="bg-indigo-600 rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-12 text-white relative overflow-hidden group shadow-2xl shadow-indigo-500/30"
                     >
                         <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-white/10 rounded-full blur-[80px]" />
                         <div className="relative z-10 flex flex-col md:flex-row gap-10 items-center">
