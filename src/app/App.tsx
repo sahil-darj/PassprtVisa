@@ -12,6 +12,7 @@ import { CountriesPage } from "@/app/pages/CountriesPage";
 import { AboutPage } from "@/app/pages/AboutPage";
 import { ContactPage } from "@/app/pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
+import { BackToTop } from "./components/BackToTop";
 import { Preloader } from "@/app/components/Preloader";
 
 function AppContent() {
@@ -38,6 +39,7 @@ function AppContent() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <ScrollToTop />
+      <BackToTop />
       <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-900 dark:selection:text-indigo-100 font-sans transition-colors duration-500">
         {/* Progress Bar */}
         <motion.div

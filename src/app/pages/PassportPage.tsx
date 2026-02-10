@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FileText, Clock, CheckCircle, Shield, Users, Award, ArrowRight, Download, Phone, X, Calendar, DollarSign, MapPin } from "lucide-react";
+import { FileText, Clock, CheckCircle, Shield, Users, Award, ArrowRight, Download, Phone, X, Calendar, DollarSign, MapPin, Search, Globe, Send } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { AppointmentModal } from "../components/AppointmentModal";
+import { ProcessSteps } from "../components/ProcessSteps";
+import { useSEO } from "../hooks/useSEO";
 
 interface Service {
     icon: any;
@@ -20,8 +21,8 @@ interface Service {
 }
 
 export const PassportPage = () => {
+    useSEO("Passport Services", "Institutional passport application and renewal services for global mobility.");
     const [selectedService, setSelectedService] = useState<Service | null>(null);
-    const [showAppointment, setShowAppointment] = useState(false);
 
     const services: Service[] = [
         {
@@ -164,16 +165,16 @@ export const PassportPage = () => {
                             The ultimate hub for global citizens. We simplify international documentation into a seamless, high-velocity experience.
                         </p>
                         <div className="flex flex-wrap gap-6 justify-center">
-                            <button className="group relative bg-slate-900 dark:bg-indigo-600 text-white px-10 py-5 rounded-[2rem] font-black text-sm tracking-widest uppercase transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-indigo-500/20 overflow-hidden">
+                            <a href="/contact#contact-form" className="group relative bg-slate-900 dark:bg-indigo-600 text-white px-10 py-5 rounded-[2rem] font-black text-sm tracking-widest uppercase transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-indigo-500/20 overflow-hidden">
                                 <span className="relative z-10 flex items-center gap-3">
                                     <Calendar className="w-5 h-5" /> Schedule Consultation
                                 </span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </button>
-                            <button className="bg-white dark:bg-[#131829] text-slate-900 dark:text-white border border-slate-200 dark:border-indigo-500/20 px-10 py-5 rounded-[2rem] font-black text-sm tracking-widest uppercase transition-all hover:bg-slate-50 dark:hover:bg-indigo-500/10 flex items-center gap-3">
+                            </a>
+                            <a href="/contact" className="bg-white dark:bg-[#131829] text-slate-900 dark:text-white border border-slate-200 dark:border-indigo-500/20 px-10 py-5 rounded-[2rem] font-black text-sm tracking-widest uppercase transition-all hover:bg-slate-50 dark:hover:bg-indigo-500/10 flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-indigo-500" />
                                 Support Terminal
-                            </button>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
@@ -251,6 +252,19 @@ export const PassportPage = () => {
                     ))}
                 </div>
             </section>
+
+            {/* Passport Process Steps */}
+            <ProcessSteps
+                title="Passport Acquisition Protocol"
+                subtitle="A high-velocity, 5-stage framework designed for absolute efficiency and institutional compliance."
+                steps={[
+                    { title: "Document Collection", description: "Assembling verified identity and citizenship artifacts for validation.", icon: FileText, color: "from-blue-600 to-indigo-600" },
+                    { title: "Online Application", description: "Precision form initialization via our secure digital infrastructure.", icon: Globe, color: "from-indigo-600 to-purple-600" },
+                    { title: "Appointment Booking", description: "Strategic scheduling at verified terminal locations.", icon: Calendar, color: "from-purple-600 to-pink-600" },
+                    { title: "Police Verification", description: "Institutional background clearance and resident validation.", icon: Shield, color: "from-pink-600 to-rose-600" },
+                    { title: "Passport Delivery", description: "Secure logistics dispatch of your travel credential.", icon: MapPin, color: "from-rose-600 to-orange-600" }
+                ]}
+            />
 
             {/* Required Documents Section */}
             <section className="bg-slate-50 dark:bg-slate-900/20 py-24 relative overflow-hidden transition-colors duration-500">
@@ -411,12 +425,12 @@ export const PassportPage = () => {
                                             <div className="text-4xl font-heading font-black mb-10 relative z-10">{selectedService.price}</div>
 
                                             <div className="space-y-4 relative z-10">
-                                                <button
-                                                    onClick={() => setShowAppointment(true)}
+                                                <a
+                                                    href="/contact#contact-form"
                                                     className="w-full py-5 bg-white text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center gap-3 shadow-lg"
                                                 >
-                                                    <Calendar className="w-5 h-5" /> Book Appointment
-                                                </button>
+                                                    <Calendar className="w-5 h-5" /> Start Application
+                                                </a>
                                                 <button
                                                     className="w-full py-5 bg-transparent border-2 border-white/20 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center gap-3"
                                                 >
@@ -431,12 +445,6 @@ export const PassportPage = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-
-            <AppointmentModal
-                isOpen={showAppointment}
-                onClose={() => setShowAppointment(false)}
-                serviceName={selectedService?.title}
-            />
         </div>
     );
 };

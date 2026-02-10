@@ -76,7 +76,7 @@ export const ContactForm = () => {
           </div>
 
           {/* Form */}
-          <div className="lg:w-3/5 p-6 md:p-12 lg:p-16 bg-white dark:bg-[#131829] transition-colors duration-500">
+          <div id="contact-form" className="lg:w-3/5 p-6 md:p-12 lg:p-16 bg-white dark:bg-[#131829] transition-colors duration-500">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="space-y-3">
@@ -102,18 +102,47 @@ export const ContactForm = () => {
                 </div>
               </div>
 
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="space-y-3">
+                  <label className="text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Phone Number</label>
+                  <input
+                    {...register("phone", { required: "Phone is required" })}
+                    className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:bg-[#0a0e27] border border-slate-200 dark:border-indigo-500/20 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all dark:text-white placeholder-slate-400"
+                    placeholder="+91 12345 67890"
+                  />
+                  {errors.phone && <p className="text-red-500 text-xs font-bold">{errors.phone.message as string}</p>}
+                </div>
+                <div className="space-y-3">
+                  <label className="text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Destination Country</label>
+                  <select
+                    {...register("country", { required: "Country is required" })}
+                    className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:bg-[#0a0e27] border border-slate-200 dark:border-indigo-500/20 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all dark:text-white appearance-none cursor-pointer"
+                  >
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Schengen">Schengen</option>
+                  </select>
+                  {errors.country && <p className="text-red-500 text-xs font-bold">{errors.country.message as string}</p>}
+                </div>
+              </div>
+
               <div className="space-y-3">
-                <label className="text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">I am interested in</label>
+                <label className="text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Visa Type</label>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  {["Passport", "Visa", "Guide", "Other"].map((item) => (
+                  {["Tourist", "Work", "Student", "Business"].map((item) => (
                     <div key={item} className="relative">
                       <input
                         type="radio"
                         id={item}
                         value={item}
-                        {...register("subject")}
+                        {...register("visaType")}
                         className="peer sr-only"
-                        defaultChecked={item === "Visa"}
+                        defaultChecked={item === "Tourist"}
                       />
                       <label
                         htmlFor={item}

@@ -34,13 +34,16 @@
   --card-foreground: #f1f5f9;
   --popover: #0f172a;
   --popover-foreground: #f1f5f9;
-  --primary: #818cf8; /* Lighter indigo for better contrast */
+  --primary: #818cf8;
+  /* Lighter indigo for better contrast */
   --primary-foreground: #ffffff;
-  --secondary: #c084fc; /* Lighter purple */
+  --secondary: #c084fc;
+  /* Lighter purple */
   --secondary-foreground: #ffffff;
   --muted: #1e293b;
   --muted-foreground: #94a3b8;
-  --accent: #22d3ee; /* Cyan neon accent */
+  --accent: #22d3ee;
+  /* Cyan neon accent */
   --accent-foreground: #020617;
   --border: #1e293b;
   --input: #0f172a;
@@ -118,6 +121,7 @@
 
   html {
     font-size: var(--font-size);
+    scroll-behavior: smooth;
   }
 
   h1 {

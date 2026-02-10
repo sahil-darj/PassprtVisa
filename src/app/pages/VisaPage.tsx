@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Briefcase, GraduationCap, Heart, Palmtree, CheckCircle, Clock, DollarSign, FileText, X, ArrowRight, Globe, Shield } from "lucide-react";
+import { Briefcase, GraduationCap, Heart, Palmtree, CheckCircle, Clock, DollarSign, FileText, X, ArrowRight, Globe, Shield, Search, Send, Users } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { AppointmentModal } from "../components/AppointmentModal";
+import { ProcessSteps } from "../components/ProcessSteps";
+import { useSEO } from "../hooks/useSEO";
 
 interface VisaType {
     icon: any;
@@ -22,8 +23,8 @@ interface VisaType {
 }
 
 export const VisaPage = () => {
+    useSEO("Visa Services", "Expert visa assistance for tourist, work, student, and business travel worldwide.");
     const [selectedVisa, setSelectedVisa] = useState<VisaType | null>(null);
-    const [showAppointment, setShowAppointment] = useState(false);
 
     const visaTypes: VisaType[] = [
         {
@@ -250,12 +251,12 @@ export const VisaPage = () => {
                                 Architecting your global mobility with precision-engineered visa services for the modern nomad and professional.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <button className="px-8 py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-2xl font-black text-xs tracking-widest uppercase shadow-2xl shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all">
+                                <a href="/contact#contact-form" className="px-8 py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-2xl font-black text-xs tracking-widest uppercase shadow-2xl shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all">
                                     START APPLICATION
-                                </button>
-                                <button className="px-8 py-4 bg-white dark:bg-white/5 text-slate-900 dark:text-white border border-slate-200 dark:border-white/10 rounded-2xl font-black text-xs tracking-widest uppercase hover:bg-slate-50 transition-all">
+                                </a>
+                                <a href="/contact" className="px-8 py-4 bg-white dark:bg-white/5 text-slate-900 dark:text-white border border-slate-200 dark:border-white/10 rounded-2xl font-black text-xs tracking-widest uppercase hover:bg-slate-50 transition-all">
                                     VIEW PRICING
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
 
@@ -363,6 +364,19 @@ export const VisaPage = () => {
                     ))}
                 </div>
             </section>
+
+            {/* Visa Process Steps */}
+            <ProcessSteps
+                title="Global Visa Clearance Protocol"
+                subtitle="A streamlined, 5-phase execution strategy engineered for maximum approval velocity."
+                steps={[
+                    { title: "Country Selection", description: "Identifying the optimal destination based on strategic travel objectives.", icon: Globe, color: "from-blue-600 to-indigo-600" },
+                    { title: "Document Preparation", description: "Assembling a precision-verified dossier of required credentials.", icon: FileText, color: "from-indigo-600 to-purple-600" },
+                    { title: "VFS / Embassy Submission", description: "Secure transmission of your application to official adjudication channels.", icon: Send, color: "from-purple-600 to-pink-600" },
+                    { title: "Interview Phase", description: "Strategic preparation and execution of institutional verification meetings.", icon: Users, color: "from-pink-600 to-rose-600" },
+                    { title: "Approval & Stamping", description: "Final validation and issuance of your international travel permit.", icon: CheckCircle, color: "from-rose-600 to-orange-600" }
+                ]}
+            />
 
             {/* Requirements Section with Image */}
             <section className="py-24 bg-slate-950 relative overflow-hidden">
@@ -550,18 +564,18 @@ export const VisaPage = () => {
                                             <div className="text-4xl font-heading font-black mb-10 relative z-10">{selectedVisa.details.fees}</div>
 
                                             <div className="space-y-4 relative z-10">
-                                                <button
-                                                    onClick={() => setShowAppointment(true)}
+                                                <a
+                                                    href="/contact#contact-form"
                                                     className="w-full py-5 bg-white text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center gap-3 shadow-lg"
                                                 >
                                                     <FileText className="w-5 h-5" /> Start Application
-                                                </button>
-                                                <button
-                                                    onClick={() => setShowAppointment(true)}
+                                                </a>
+                                                <a
+                                                    href="/contact#contact-form"
                                                     className="w-full py-5 bg-transparent border-2 border-white/20 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center gap-3"
                                                 >
                                                     <Shield className="w-5 h-5" /> Eligibility Check
-                                                </button>
+                                                </a>
                                             </div>
                                         </motion.div>
 
@@ -588,12 +602,6 @@ export const VisaPage = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-
-            <AppointmentModal
-                isOpen={showAppointment}
-                onClose={() => setShowAppointment(false)}
-                serviceName={selectedVisa?.title}
-            />
         </div>
     );
 };
