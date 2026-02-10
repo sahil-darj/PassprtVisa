@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Mail, Phone, MapPin, Send, Globe } from "lucide-react";
 import { motion } from "framer-motion";
+import logo from "./logo.png";
 
 export const ContactForm = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -66,10 +67,7 @@ export const ContactForm = () => {
 
               <div className="mt-20 pt-12 border-t border-white/10">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-indigo-500 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/40">
-                    <Globe className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="font-heading font-black text-2xl tracking-tighter">Felix</span>
+                  <img src={logo} alt="Felix Logo" className="h-10 w-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -194,12 +192,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-24 mb-24">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-4 mb-10">
-              <div className="w-14 h-14 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-2xl shadow-indigo-500/20 transform -rotate-6">
-                <Globe className="w-8 h-8" />
-              </div>
-              <span className="text-3xl font-heading font-black text-slate-900 dark:text-white tracking-tighter">
-                Felix
-              </span>
+              <img src={logo} alt="Felix Logo" className="h-14 w-auto object-contain" />
             </div>
             <p className="text-slate-500 dark:text-slate-400 mb-10 leading-relaxed text-lg font-medium">
               Empowering global citizens with verified intelligence to navigate international borders with absolute confidence.

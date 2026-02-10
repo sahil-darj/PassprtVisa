@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import { Award, Users, Globe, TrendingUp, Shield, Clock, Heart, Sparkles, Binary } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import logo from "../components/logo.png";
 
 const Counter = ({ value }: { value: string }) => {
     const ref = useRef<HTMLSpanElement>(null);
@@ -108,8 +109,8 @@ export const AboutPage = () => {
                             <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
                             <span>Organizational Dossier</span>
                         </motion.div>
-                        <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black mb-10 text-slate-900 dark:text-white leading-[0.9] tracking-tighter">
-                            Felix
+                        <h1 className="mb-10 flex justify-center">
+                            <img src={logo} alt="Felix Logo" className="h-24 md:h-32 lg:h-40 w-auto object-contain" />
                         </h1>
                         <p className="text-2xl text-slate-500 dark:text-slate-400 max-w-3xl mx-auto font-medium leading-relaxed italic">
                             "Architecting the infrastructure of global citizenship since 2009."

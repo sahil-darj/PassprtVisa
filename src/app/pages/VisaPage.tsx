@@ -4,6 +4,7 @@ import { Briefcase, GraduationCap, Heart, Palmtree, CheckCircle, Clock, DollarSi
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { ProcessSteps } from "../components/ProcessSteps";
 import { useSEO } from "../hooks/useSEO";
+import logo from "../components/logo.png";
 
 interface VisaType {
     icon: any;
@@ -244,8 +245,9 @@ export const VisaPage = () => {
                                 <Globe className="w-3.5 h-3.5" />
                                 <span>Global Access Intelligence</span>
                             </motion.div>
-                            <h1 className="text-5xl md:text-6xl font-heading font-black mb-6 text-slate-900 dark:text-white leading-tight">
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Felix</span> Logistics
+                            <h1 className="mb-6 flex items-center gap-4">
+                                <img src={logo} alt="Felix Logo" className="h-12 md:h-16 w-auto object-contain" />
+                                <span className="text-5xl md:text-6xl font-heading font-black text-slate-900 dark:text-white">Logistics</span>
                             </h1>
                             <p className="text-xl text-slate-500 dark:text-slate-400 mb-10 leading-relaxed font-medium">
                                 Architecting your global mobility with precision-engineered visa services for the modern nomad and professional.

@@ -6,6 +6,8 @@ import { useTheme } from "@/app/context/ThemeContext";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+import logo from "./logo.png";
+
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
@@ -44,13 +46,11 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="relative">
-            <Globe className="w-8 h-8 text-indigo-600 dark:text-indigo-400 group-hover:rotate-12 transition-transform duration-300" />
-            <div className="absolute inset-0 bg-indigo-500/20 blur-xl rounded-full group-hover:bg-indigo-500/30 transition-all" />
-          </div>
-          <span className="text-2xl font-heading font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
-            Felix
-          </span>
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+          />
         </Link>
 
         {/* Desktop Nav */}

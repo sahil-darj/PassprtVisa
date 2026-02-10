@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Globe } from "lucide-react";
 import airCopy from "./air_copy.png";
+import logo from "./logo.png";
 
 export const Preloader = () => {
     return (
@@ -53,9 +54,7 @@ export const Preloader = () => {
                 transition={{ delay: 0.3 }}
                 className="mt-12 text-center"
             >
-                <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 mb-2">
-                    Felix
-                </h2>
+                <img src={logo} alt="Felix Logo" className="h-12 w-auto object-contain mb-4 mx-auto" />
                 <div className="flex items-center justify-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400 animate-bounce [animation-delay:-0.3s]"></span>
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400 animate-bounce [animation-delay:-0.15s]"></span>

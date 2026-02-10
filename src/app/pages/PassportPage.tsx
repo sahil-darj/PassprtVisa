@@ -4,6 +4,7 @@ import { FileText, Clock, CheckCircle, Shield, Users, Award, ArrowRight, Downloa
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { ProcessSteps } from "../components/ProcessSteps";
 import { useSEO } from "../hooks/useSEO";
+import logo from "../components/logo.png";
 
 interface Service {
     icon: any;
@@ -158,8 +159,9 @@ export const PassportPage = () => {
                             <Shield className="w-4 h-4" />
                             <span>Trusted Multi-Nation Services</span>
                         </motion.div>
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-black mb-6 text-slate-900 dark:text-white leading-tight">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">Felix</span> Intelligence
+                        <h1 className="mb-6 flex flex-col md:flex-row items-center justify-center gap-4">
+                            <img src={logo} alt="Felix Logo" className="h-12 md:h-16 lg:h-20 w-auto object-contain" />
+                            <span className="text-5xl md:text-6xl lg:text-7xl font-heading font-black text-slate-900 dark:text-white">Intelligence</span>
                         </h1>
                         <p className="text-xl text-slate-500 dark:text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
                             The ultimate hub for global citizens. We simplify international documentation into a seamless, high-velocity experience.
